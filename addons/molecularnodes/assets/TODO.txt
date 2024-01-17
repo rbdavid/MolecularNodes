@@ -1,0 +1,12 @@
+TO DO: 
+    - MN_select_sec_struct. Implement a new 2ndary structure selection node that selects for non-AH, BS, loop structures. Need to figure out where the MN_select_sec_struct node is used (labeled as 19 uses). 
+    - There's a MN_utils_dssp node but doesn't seem to have any connections, uses, and an incomplete set of parameters? Can geometry nodes be used to create new attributes in the Spreadsheet viewer? 
+    
+NOTES: 
+    - Unclear if MN_utils_style_old_ball_and_stick is active to be used or not. 
+    - MN_style_presets is maybe used as a good starting off point for future development of other visualization methods? 
+    - MN_color_backbone, how are sidechain/backbone atoms labeled? 
+    - MN_color_sec_struct, related to MN_select_sec_struct. Once dssp output is gathered and stored in an attribute, increase complexity of this node to color all types of 2ndary structures. 
+    - How does the MN_select_res_name_peptide node handle non-standard residue naming? Like, HIE/HID/HIP/HIS naming should all be collected under HIS or as separate selections? See https://userguide.mdanalysis.org/stable/standard_selections.html for the standard residue names accepted by MDA
+    
+Highlighted uncertain nodes in red. Tried to organize the place too. Left nodes that I do not expect to use on the right side.  
